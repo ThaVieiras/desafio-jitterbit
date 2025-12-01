@@ -1,0 +1,24 @@
+### Teste - Criar um Pedido (POST)
+POST http://127.0.0.1:3000/order
+Content-Type: application/json
+
+{
+  "numeroPedido": "12345",
+  "valorTotal": 150.00,
+  "dataCriacao": "2025-11-30",
+  "items": [
+    {
+      "idItem": "10",
+      "quantidadeItem": 1,
+      "valorItem": 50.00
+    },
+    {
+      "idItem": "20",
+      "quantidadeItem": 2,
+      "valorItem": 50.00
+    }
+  ]
+}
+
+### Teste - Listar Todos os Pedidos (GET)
+GET http://127.0.0.1:3000/order/list
